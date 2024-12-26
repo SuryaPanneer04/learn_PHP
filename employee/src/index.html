@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            
+        }
+        .empDetailes{
+            display:flex;
+            flex-direction:column;
+            width: 200px;
+            margin: 0px 35px;
+            font-weight: 600;
+           
+        }
+        input {
+            margin: 20px 0;
+            width: 100%;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>  
+    <form action="insertdata.php" method="post">
+        <div class="empDetailes">
+              <label htmlfor="empname">Name :</label>
+              <input type ="text" name="empname" placeholder="enter your name" autocomplete="name" required>
+              <label htmlfor="empage">Age :</label>
+              <input type="text" name="empage" placeholder="enter your age" autocomplete="age" required>
+              <label htmlfor="emprole">Role :</label>
+              <input type="text" name="emprole" placeholder="enter your role" autocomplete="role" required>
+              <label htmlfor="empno">number :</label>
+              <input type="text" name="empno" placeholder="enter your number" autocomplete="number" required>
+              <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>
